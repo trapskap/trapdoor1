@@ -1,0 +1,186 @@
+local ssexecutor = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local nameofgui = Instance.new("TextLabel")
+local hereboi = Instance.new("TextBox")
+local exe = Instance.new("TextButton")
+local bam = Instance.new("TextButton")
+local border = Instance.new("TextLabel")
+local ham = Instance.new("TextButton")
+local bl = Instance.new("TextButton")
+local mo = Instance.new("TextButton")
+local r = Instance.new("TextButton")
+local voo = Instance.new("TextButton")
+local xes = Instance.new("TextButton")
+
+ssexecutor.Name = "ssexecutor"
+ssexecutor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ssexecutor.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ssexecutor.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ssexecutor
+Main.BackgroundColor3 = Color3.new(0, 1, 1)
+Main.Position = UDim2.new(0.298872203, 0, 0.0380434804, 0)
+Main.Size = UDim2.new(0, 554, 0, 328)
+Main.Style = Enum.FrameStyle.RobloxRound
+Main.Active = true
+Main.Selectable = true
+Main.Draggable = true
+
+nameofgui.Name = "nameofgui"
+nameofgui.Parent = Main
+nameofgui.BackgroundColor3 = Color3.new(1, 1, 1)
+nameofgui.BackgroundTransparency = 1
+nameofgui.Position = UDim2.new(-0.00315642101, 0, -0.0270833485, 0)
+nameofgui.Size = UDim2.new(0, 554, 0, 26)
+nameofgui.Font = Enum.Font.SourceSans
+nameofgui.Text = "trapdoor executor"
+nameofgui.TextColor3 = Color3.new(1, 1, 1)
+nameofgui.TextSize = 18
+nameofgui.TextXAlignment = Enum.TextXAlignment.Left
+
+hereboi.Name = "hereboi"
+hereboi.Parent = Main
+hereboi.BackgroundColor3 = Color3.new(0.121569, 0.121569, 0.121569)
+hereboi.BackgroundTransparency = 0.050000000745058
+hereboi.Position = UDim2.new(-0.0126353791, 0, 0.127432659, 0)
+hereboi.Size = UDim2.new(0, 377, 0, 222)
+hereboi.Font = Enum.Font.SourceSans
+hereboi.PlaceholderText = "-- scripts enter here"
+hereboi.Text = ""
+hereboi.TextColor3 = Color3.new(0, 1, 1)
+hereboi.TextSize = 18
+hereboi.TextWrapped = true
+hereboi.TextXAlignment = Enum.TextXAlignment.Left
+hereboi.TextYAlignment = Enum.TextYAlignment.Top
+hereboi.ClearTextOnFocus = false
+
+exe.Name = "exe"
+exe.Parent = Main
+exe.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+exe.BorderColor3 = Color3.new(0, 0, 0)
+exe.BorderSizePixel = 0
+exe.Position = UDim2.new(0.010621055, 0, 0.878181159, 0)
+exe.Size = UDim2.new(0, 132, 0, 31)
+exe.Font = Enum.Font.SourceSans
+exe.Text = "Execute"
+exe.TextColor3 = Color3.new(0, 0.666667, 1)
+exe.TextSize = 20
+exe.MouseButton1Click:connect(function()
+		game.ReplicatedStorage.RemoteEvent:FireServer(hereboi.Text)
+end)
+
+bam.Name = "bam"
+bam.Parent = Main
+bam.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+bam.BorderSizePixel = 0
+bam.Position = UDim2.new(0.387877345, 0, 0.875132382, 0)
+bam.Size = UDim2.new(0, 132, 0, 31)
+bam.Font = Enum.Font.SourceSans
+bam.Text = "Clear"
+bam.TextColor3 = Color3.new(0, 0.666667, 1)
+bam.TextSize = 20
+bam.MouseButton1Click:connect(function()
+ hereboi.Text = ""
+end)
+
+border.Name = "border"
+border.Parent = Main
+border.BackgroundColor3 = Color3.new(1, 1, 1)
+border.Position = UDim2.new(0.686270535, 0, -0.024390243, 0)
+border.Size = UDim2.new(0, 8, 0, 327)
+border.Font = Enum.Font.SourceSans
+border.Text = ""
+border.TextColor3 = Color3.new(0, 0, 0)
+border.TextSize = 14
+
+ham.Name = "ham"
+ham.Parent = Main
+ham.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+ham.Position = UDim2.new(0.721566081, 0, 0.01695963, 0)
+ham.Size = UDim2.new(0, 139, 0, 29)
+ham.Font = Enum.Font.SourceSans
+ham.Text = "j00rkidd v3"
+ham.TextColor3 = Color3.new(1, 1, 1)
+ham.TextSize = 20
+ham.MouseButton1Click:connect(function()
+ hereboi.Text="require(15426527704).v3('plr.name')"
+end)
+
+bl.Name = "bl"
+bl.Parent = Main
+bl.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+bl.Position = UDim2.new(0.721566081, 0, 0.16330108, 0)
+bl.Size = UDim2.new(0, 139, 0, 29)
+bl.Font = Enum.Font.SourceSans
+bl.Text = "anti hyperion"
+bl.TextColor3 = Color3.new(1, 1, 1)
+bl.TextSize = 20
+bl.MouseButton1Click:connect(function()
+ hereboi.Text="require(14448501641)('name')"
+end)
+
+mo.Name = "mo"
+mo.Parent = Main
+mo.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+mo.Position = UDim2.new(0.721566081, 0, 0.318788886, 0)
+mo.Size = UDim2.new(0, 139, 0, 29)
+mo.Font = Enum.Font.SourceSans
+mo.Text = "k00p v18"
+mo.TextColor3 = Color3.new(1, 1, 1)
+mo.TextSize = 20
+mo.MouseButton1Click:connect(function()
+ hereboi.Text="require(14940901622).v18('trapskap')"
+end)
+
+r.Name = "r"
+r.Parent = Main
+r.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+r.Position = UDim2.new(0.721566081, 0, 0.483423054, 0)
+r.Size = UDim2.new(0, 139, 0, 29)
+r.Font = Enum.Font.SourceSans
+r.Text = "k00p v3 remake"
+r.TextColor3 = Color3.new(1, 1, 1)
+r.TextSize = 20
+r.MouseButton1Click:connect(function()
+ hereboi.Text="require(14894639761).V3Fixed('trapskap')"
+end)
+
+voo.Name = "voo"
+voo.Parent = Main
+voo.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+voo.Position = UDim2.new(0.721566081, 0, 0.660252333, 0)
+voo.Size = UDim2.new(0, 139, 0, 29)
+voo.Font = Enum.Font.SourceSans
+voo.Text = "itsnotskeleton utd"
+voo.TextColor3 = Color3.new(1, 1, 1)
+voo.TextSize = 20
+voo.MouseButton1Click:connect(function()
+ hereboi.Text="require(15537590527).Ulti('TheRealBaconKingone')"
+end)
+
+xes.Name = "xes"
+xes.Parent = Main
+xes.BackgroundColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+xes.Position = UDim2.new(0.721566081, 0, 0.827935278, 0)
+xes.Size = UDim2.new(0, 139, 0, 29)
+xes.Font = Enum.Font.SourceSans
+xes.Text = "k00p secret edition"
+xes.TextColor3 = Color3.new(1, 1, 1)
+xes.TextSize = 20
+xes.MouseButton1Click:connect(function()
+ hereboi.Text="require(14412108127).gui('plr.name')"
+end)
+
+p = game.Players.LocalPlayer
+mouse = p:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+         if key == "h" then
+       if Main.Visible == true then
+           Main.Visible = false
+        else
+            Main.Visible = true
+        end
+            end
+end)
